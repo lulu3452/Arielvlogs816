@@ -1,0 +1,220 @@
+/* * {
+  border: solid 1px red;
+} */
+/* .navbar-nav {
+  margin-left: 200px;
+} */
+/* 全局樣式 */
+@import url("https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Noto+Serif+TC:wght@200..900&display=swap");
+* {
+  font-family: "Cactus Classical Serif", serif;
+}
+body {
+  font-family: "Cactus Classical Serif", serif;
+  line-height: 1.6;
+  padding-top: 80px; /* 確保內容不會被固定導航欄遮住 */
+  color: #343a40;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cactus Classical Serif", serif;
+  font-weight: bolder;
+}
+
+/* 頁首和導航欄 */
+.carousel-inner {
+  padding-top: 50px;
+}
+
+.navbar {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
+  font-size: 1.1em;
+  color: #007bff !important;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0056b3 !important;
+  text-decoration: underline;
+}
+
+/* 幻燈片 */
+.carousel-inner img {
+  height: 75vh;
+  object-fit: cover;
+  filter: brightness(85%);
+  transition: filter 0.5s;
+}
+
+.carousel-inner img:hover {
+  filter: brightness(100%);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+}
+
+/* 頻道介紹 */
+.container-fluid h1,
+.container-fluid h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.container-fluid p {
+  color: #6c757d;
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.container-fluid hr {
+  border-top: 2px solid #007bff;
+}
+
+/* 主要成員 */
+.card {
+  border: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  object-fit: cover;
+}
+
+.card-body {
+  background-color: #fff;
+}
+
+.card-title {
+  font-size: 1.25em;
+  color: #343a40;
+}
+
+.card-text {
+  color: #6c757d;
+  font-size: 1.1em;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* 推薦影片 */
+.recommendation img {
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recommendation img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation h3 {
+  color: #343a40;
+}
+
+.recommendation h3 .badge {
+  background-color: #dc3545;
+}
+
+.recommendation hr {
+  border-top: 1px solid #dee2e6;
+}
+
+/* 聯絡資訊 */
+.container-fluid h4 {
+  font-size: 1.5em;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.container-fluid p {
+  font-size: 1.1em;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.cr {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin-top: 1rem;
+}
+
+/* 返回頂部按鈕 */
+.toTop-arrow {
+  width: 5rem;
+  height: 5rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 33%;
+  opacity: 0.6;
+  background: #6588bf;
+  cursor: pointer;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  display: none;
+}
+.toTop-arrow::before,
+.toTop-arrow::after {
+  width: 45px;
+  height: 10px;
+  border-radius: 3px;
+  background: #c0d1eb;
+  position: absolute;
+  content: "";
+}
+.toTop-arrow::before {
+  transform: rotate(-45deg) translate(0, -50%);
+  left: 0.5rem;
+}
+.toTop-arrow::after {
+  transform: rotate(45deg) translate(0, -50%);
+  right: 0.5rem;
+}
+.toTop-arrow:focus {
+  outline: none;
+}
+
+/* 調整容器的間距 */
+.container-fluid {
+  padding: 2rem 3rem;
+}
